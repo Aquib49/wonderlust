@@ -8,8 +8,13 @@ const ejsMate = require("ejs-mate")
 const wrapAsync = require("./utils/wrapAsync.js")
 const ExpressError = require("./utils/ExpressError.js")
 const {listingSchema} = require("./schema.js")
+const prodUrl = "mongodb+srv://aquibequebal49:cmcHRIBPEEia04Or@cluster0.scai4.mongodb.net/wanderlust"
 
-const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+
+
+const MONGO_URL = prodUrl 
+
+
 
 main()
   .then(() => {
